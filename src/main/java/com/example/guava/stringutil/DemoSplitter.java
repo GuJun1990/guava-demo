@@ -1,4 +1,4 @@
-package com.example.guava;
+package com.example.guava.stringutil;
 
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
