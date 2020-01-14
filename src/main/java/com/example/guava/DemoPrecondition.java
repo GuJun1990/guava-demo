@@ -3,6 +3,9 @@ package com.example.guava;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
+/**
+ * 前提条件检查工具
+ */
 public class DemoPrecondition {
 
     private void checkArgumentTest(int i) {
