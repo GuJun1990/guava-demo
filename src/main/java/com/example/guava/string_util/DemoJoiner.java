@@ -1,4 +1,4 @@
-package com.example.guava.stringutil;
+package com.example.guava.string_util;
 
 import com.google.common.base.Joiner;
 

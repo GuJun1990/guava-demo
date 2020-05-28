@@ -15,7 +15,7 @@ public class DemoImmutableCollections {
             "purple"
     );
 
-    class Foo {
+    static class Foo {
         final ImmutableSet<String> strings;
         Foo(Set<String> strings) {
             this.strings = ImmutableSet.copyOf(strings); // 制作对象的不变副本是一种很好的防御性编程技术
