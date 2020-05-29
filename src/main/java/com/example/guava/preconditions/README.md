@@ -15,8 +15,8 @@ import static com.google.common.base.Preconditions.checkArgument;
 | 方法签名 | 说明 | 检查失败抛出的异常 |
 | :- | :- | :- |
 |checkArgument(boolean)|检查布尔值是否为真。用于验证方法的参数|IllegalArgumentException|
-|checkNotNull(T)|检查值是否不为null。直接返回值，因此可以内联使用checkNotNull(value)|NullPointerException|
-|checkState(boolean)|||
+|checkNotNull(T)|检查值是否不为null。直接返回值，因此可以内联使用`Object obj = checkNotNull(value)`|NullPointerException|
+|checkState(boolean)|检查对象的某些状态，而不依赖于方法参数。例如，一个Iterator可能会使用它来检查在调用任何remove之前是否已调用next。||
 |checkElementIndex(int index, int size)|||
 |checkPositionIndex(int index, int size)|||
 |checkPositionIndexes(int start, int end, int size)|||

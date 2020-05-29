@@ -3,6 +3,7 @@ package com.example.guava.preconditions;
 import org.junit.Test;
 
 import static com.google.common.base.Preconditions.checkArgument;
+import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
  * @author gujun@qiyi.com
@@ -22,12 +23,22 @@ public class DemoPreconditions {
         fun2(2, 1); // java.lang.IllegalArgumentException: Expected i < j, but 2 >= 1
     }
 
+    @Test
+    public void check_not_null() {
+        fun3(new Object()); // java.lang.NullPointerException
+        fun3(null);
+    }
+
     void fun1(int i) {
         checkArgument(i >= 0, "Argument is %s, but expected non negative", i);
     }
 
     void fun2(int i, int j) {
         checkArgument(i < j, "Expected i < j, but %s >= %s", i, j);
+    }
+
+    void fun3(Object obj) {
+        checkNotNull(obj);
     }
 
 
