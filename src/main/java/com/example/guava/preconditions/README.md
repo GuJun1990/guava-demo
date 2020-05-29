@@ -13,7 +13,7 @@ import static com.google.common.base.Preconditions.checkArgument;
     * 注意：`checkNotNull`，`checkArgument`和`checkState`具有大量重载，这些重载采用原始参数和Object参数而不是varargs数组的组合-这允许上述调用避免大多数情况下避免原始装箱和varags数组分配。
     
 | 方法签名 | 说明 | 检查失败抛出的异常 |
-| :-: | :-: | :-: |
+| :- | :- | :- |
 |checkArgument(boolean)|检查布尔值是否为真。用于验证方法的参数|IllegalArgumentException|
 |checkNotNull(T)|检查值是否不为null。直接返回值，因此可以内联使用checkNotNull(value)|NullPointerException|
 |checkState(boolean)|||
