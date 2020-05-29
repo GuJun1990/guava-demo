@@ -9,7 +9,7 @@ Guava项目包含Google的几个核心库：集合，缓存，原语支持，并
 
 * 基本实用程序：使用Java语言更加愉快
     * [避免使用null](https://github.com/GuJun1990/guava-demo/tree/master/src/main/java/com/example/guava/optional)：`null`是模棱两可的，容易引起混乱的错误，有时甚至是很不愉快的。许多Guava实用程序拒绝`null`并快速失败，而不是盲目地接受它们。
-    * `Preconditions`前提条件：更轻松地测试方法的前提条件。
+    * [`Preconditions`前提条件](https://github.com/GuJun1990/guava-demo/tree/master/src/main/java/com/example/guava/preconditions)：更轻松地测试方法的前提条件。
     * 常用的对象方法：简化实现`Object`方法，例如`hashCode()`和`toString()`。
     * Ordering：Guava功能强大的“流利比较器”类。
     * Throwable：简化传播和检查异常和错误。
