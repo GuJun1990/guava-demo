@@ -1,5 +1,6 @@
 ## 不可变集合
 
+### Why?
 不可变对象具有许多优点，包括：
 * 可供不受信任的库使用。
 * 线程安全：可以被许多线程使用，而不会出现竞争状况。
@@ -16,5 +17,9 @@ public static final ImmutableSet<Color> GOOGLE_COLORS =
        .add(new Color(0, 191, 255))
        .build();
 ```
+
+### `copyOf`比你想象的还要聪明
+记住，`ImmutableXXX.copyOf`会在安全的情况下尝试避免复制数据，虽然具体的细节没有说明但实现通常是智能的，这很有用，例如：
+
 
 ### 与JDK不可变集合对比
